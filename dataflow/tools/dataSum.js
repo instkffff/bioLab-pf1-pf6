@@ -21,7 +21,7 @@ function dataSum(node, groupF, groupS) {
         }
     }
     
-    return sum + 4000
+    return Math.min(sum + 4000, 20000)
 }
 
 /* 
