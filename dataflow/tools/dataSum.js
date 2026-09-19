@@ -24,6 +24,7 @@ function dataSum(node, groupF, groupS) {
     return sum + 4000
 }
 
-console.log(dataSum('CONSOLE', 'PF1W', 'PF1S'))
+/* 
+console.log(dataSum('CONSOLE', 'PF1W', 'PF1S')) */
 
 export { dataSum }

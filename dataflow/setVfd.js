@@ -12,7 +12,6 @@ function setFlow(groupF, groupS, tag) {
         value: windSum
     }
     const json = JSON.stringify(msgMaker(data))
-    console.log(json)
     mqttPublish(reqWrite, json);
 }
 
