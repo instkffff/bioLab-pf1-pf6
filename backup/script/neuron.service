@@ -1,0 +1,28 @@
+[Unit]
+Description=Neuron Service
+After=network.target
+
+[Service]
+# 设置运行服务的用户（建议不要使用 root，替换为你的用户名）
+User=nucadmin
+
+# 工作目录
+WorkingDirectory=/home/nucadmin/neuron
+
+# 启动前延迟 30 秒
+ExecStartPre=/bin/sleep 30
+
+# 启动命令（必须使用绝对路径）
+ExecStart=/home/nucadmin/neuron/neuron
+
+# 崩溃后自动重启
+Restart=always
+RestartSec=5s
+
+# 标准输出和错误日志重定向到 journald
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=neuron
+
+[Install]
+WantedBy=multi-user.target
