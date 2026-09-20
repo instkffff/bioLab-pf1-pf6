@@ -24,7 +24,6 @@ function dataSum(node, groupF, groupS) {
     return Math.min(sum + 4000, 20000)
 }
 
-/* 
-console.log(dataSum('CONSOLE', 'PF1W', 'PF1S')) */
+/* console.log(dataSum('CONSOLE', 'PF1W', 'PF1S')) */
 
 export { dataSum }
