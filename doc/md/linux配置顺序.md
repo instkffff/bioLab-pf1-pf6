@@ -13,7 +13,7 @@
 ### 1. 安装 mqtt-server
 
 - sudo apt install mosquitto mosquitto-clients
-- 配置 mosquitto 服务
+- 配置 mosquitto 服务 （/etc/mosquitto/mosquitto.conf）
 
 ``` txt
 persistence true
@@ -27,6 +27,8 @@ allow_anonymous true
 
 listener 1883 0.0.0.0
 ```
+
+- sudo systemctl restart mosquitto
 
 ### 2. 安装 emqx-neuron
 
@@ -44,8 +46,6 @@ User=username
 
 # 工作目录
 WorkingDirectory=/home/username/neuron
-
-前延迟 3前延迟 30 秒
 ExecStartPre=/bin/sleep 30
 
 # 启动命令（必须使用绝对路径）
@@ -109,6 +109,7 @@ npm -v # Should print "11.19.0".
 ### 6. 安装 tailscale
 
 - curl -fsSL https://tailscale.com/install.sh | sh
+- tailscale up
 - 根据提示配置就行
 
 ### 7. pm2 开机启动
