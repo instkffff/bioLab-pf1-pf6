@@ -174,3 +174,24 @@ session        required        pam_systemd.so
 
 - sudo systemctl daemon-reload
 - sudo systemctl start cage-tty@tty7.service
+
+## linux 代理设置
+
+### 1. 全局代理
+
+- export http_proxy="http://127.0.0.1:7890"
+- export https_proxy="http://127.0.0.1:7890"
+- export HTTP_PROXY="http://127.0.0.1:7890"
+- export HTTPS_PROXY="http://127.0.0.1:7890"
+- export no_proxy="localhost,127.0.0.1"
+- export NO_PROXY="localhost,127.0.0.1"
+
+- unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY no_proxy NO_PROXY （取消全局代理）
+
+### 2. git 全局代理
+
+- git config --global http.proxy http://127.0.0.1:7890
+- git config --global https.proxy http://127.0.0.1:7890
+
+- git config --global --unset http.proxy （取消git全局代理）
+- git config --global --unset https.proxy （取消git全局代理）
