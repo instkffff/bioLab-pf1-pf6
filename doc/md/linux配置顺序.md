@@ -42,14 +42,16 @@ After=network.target
 
 [Service]
 # 设置运行服务的用户（建议不要使用 root，替换为你的用户名）
-User=username
+User=nucadmin
 
 # 工作目录
-WorkingDirectory=/home/username/neuron
+WorkingDirectory=/home/nucadmin/neuron
+
+# 启动前延迟 30 秒
 ExecStartPre=/bin/sleep 30
 
 # 启动命令（必须使用绝对路径）
-ExecStart=/home/username/neuron
+ExecStart=/home/nucadmin/neuron/neuron
 
 # 崩溃后自动重启
 Restart=always
