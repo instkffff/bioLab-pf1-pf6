@@ -17,7 +17,7 @@ function genListF(num) {
 const PF1 = genListK(20)
 const PF2 = genListK(16)
 const PF3 = genListK(12)
-const PF4 = genListK(8)
+const PF4 = genListK(12)
 const PF5 = genListK(4)
 const PF6 = genListK(8)
 const VFDF = genListF(6)
