@@ -29,7 +29,7 @@ const handleMain = (msgString) => {
         updateDB(data);
         setVFD(data);
     } catch (e) {
-        console.error('更新数据库失败:', e);
+        console.error('更新数据失败:', e);
     }
     console.log('main', data);
 };
