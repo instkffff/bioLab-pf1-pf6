@@ -34,7 +34,7 @@ function dataConvert(data) {
 }
 
 /* 
-const data = { node: 'S1', group: 'PF1', values: { K16: 0 } }
+const data = { node: 'S1', group: 'PF1', values: { "k1": 1, "k2": 2, "k3": 3, "k4": 4, "k5": 5 } }
 
 console.log(dataConvert(data)); */
 
