@@ -102,5 +102,3 @@ console.log(template); */
 console.log(template); */
 
 await insertTags(baseUrl, key, 'CONSOLE', 'PF6W', tagListConsole(12, 40, 'F'));
-
-
