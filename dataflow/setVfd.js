@@ -1,4 +1,4 @@
-import { KTrigger, FTrigger, VTrigger, VKTrigger } from './trigger.js'
+import { KTrigger, FTrigger, VTrigger, VKTrigger, SFTrigger } from './trigger.js'
 import { mqttPublish, reqWrite } from '../mqtt/mqtt.js'
 import { msgMaker } from '../mqtt/msgMaker.js'
 import { dataSum } from './tools/dataSum.js'
